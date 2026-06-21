@@ -16,9 +16,9 @@
         .btn-red{background:#f25757;color:#fff;}
         .btn-sm{padding:4px 10px;font-size:13px;margin-left:8px;}
         .box-card{background:#ffffff;border-radius:10px;padding:20px;margin:10px 0;box-shadow:0 2px 10px #d1e2d6;}
-        #info-page{position:relative;min-height:calc(100vh - 30px);padding:34px 18px 320px;border-radius:20px;overflow:hidden;background:linear-gradient(180deg,#dff4ff 0%,#f3fff1 45%,#caeeb7 100%)}
-        #info-page:before{content:"";position:absolute;left:-10%;right:-10%;bottom:-55px;height:210px;background:radial-gradient(ellipse at center,#8bd764 0%,#bde997 50%,rgba(189,233,151,0) 76%);}        
-        #info-page .box-card{position:relative;z-index:3;max-width:620px;margin:0 auto;background:rgba(255,255,255,.62);box-shadow:none;border:2px solid rgba(255,255,255,.75);backdrop-filter:blur(6px);}
+        #info-page{position:relative;min-height:calc(100vh - 30px);padding:34px 18px 320px;border-radius:20px;overflow:hidden;background:linear-gradient(180deg,#dff4ff 0%,#f3fff1 45%,#caeeb7 100%);}
+        #info-page:before{content:"";position:absolute;left:-10%;right:-10%;bottom:-55px;height:210px;background:radial-gradient(ellipse at center,#8bd764 0%,#bde997 50%,rgba(189,233,151,0) 76%);}
+        #info-page .box-card{position:relative;z-index:3;max-width:620px;margin:0 auto;background:rgba(255,255,255,.62);box-shadow:none;border:2px solid rgba(255,255,255,.75);backdrop-filter:blur(10px);}
         #info-page h2{font-size:36px;}
         #info-page p{font-size:24px;line-height:1.9;}
         #info-page input,#info-page select{font-size:22px;padding:10px 12px;}
@@ -34,17 +34,17 @@
         .pokemon-card.snorlax{right:4%;bottom:0;width:23%;z-index:3;}
         .pokemon-card.jigglypuff{right:28%;bottom:44px;width:15%;z-index:5;}
         .mc-map{display:grid;gap:1px;background:#80c764;padding:6px;border-radius:8px;margin:15px auto;width:max-content;max-width:100%;--tile:40px;}
-        .map-block{width:var(--tile);height:var(--tile);display:flex;align-items:center;justify-content:center;font-size:calc(var(--tile) * .62);border-radius:2px;position:relative;overflow:hidden}
-        .player-token{width:calc(var(--tile) * .85);height:calc(var(--tile) * .85);display:flex;align-items:center;justify-content:center;position:relative;z-index:2;background:rgba(255,255,255,.8);border-radius:6px}
+        .map-block{width:var(--tile);height:var(--tile);display:flex;align-items:center;justify-content:center;font-size:calc(var(--tile) * .62);border-radius:2px;position:relative;overflow:hidden;}
+        .player-token{width:calc(var(--tile) * .85);height:calc(var(--tile) * .85);display:flex;align-items:center;justify-content:center;position:relative;z-index:2;background:rgba(255,255,255,.8);border-radius:50%;}
         .path-block{background:#d9c98a;border:1px solid #cdbb78;}
         .grass-block{background:#8ed668;border:2px solid #73c057;}
         .tree-block{background:#4b7c3f;border:2px solid #3a6130;}
         .stone-block{background:#9c9c9c;border:2px solid #828282;}
         .water-block{background:#5fb8f0;border:2px solid #4a9cd1;}
         .home-block{background:#ffdd55;border:2px solid #e6c23c;}
-        .land-toast{position:fixed;top:18px;left:50%;transform:translateX(-50%);background:#fff8dc;color:#8a3b00;border:3px solid #ffbf37;border-radius:12px;padding:12px 24px;font-size:20px;font-weight:600}
+        .land-toast{position:fixed;top:18px;left:50%;transform:translateX(-50%);background:#fff8dc;color:#8a3b00;border:3px solid #ffbf37;border-radius:12px;padding:12px 24px;font-size:20px;font-weight:bold;z-index:1000;animation:slideDown .3s;}
         .footer-nav{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:20px;}
-        .nav-text{font-size:15px;color:#25543a;cursor:pointer;text-align:center;background:#fff;padding:12px 6px;border-radius:10px;box-shadow:0 3px 0 #cfe4d5;border:1px solid #e4f0e7;font-weight:600}
+        .nav-text{font-size:15px;color:#25543a;cursor:pointer;text-align:center;background:#fff;padding:12px 6px;border-radius:10px;box-shadow:0 3px 0 #cfe4d5;border:1px solid #e4f0e7;font-weight:bold;}
         .nav-text:active{transform:translateY(2px);box-shadow:0 1px 0 #cfe4d5;}
         .nav-text.active{color:#2b88d8;font-weight:bold;}
         .mask{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);display:flex;align-items:center;justify-content:center;z-index:999;}
@@ -64,14 +64,14 @@
         .pet-card{position:relative;background:#3f947f;border:4px solid #8dd9bc;border-radius:16px;padding:12px;text-align:center;box-shadow:inset 0 0 0 2px rgba(255,255,255,.14),0 6px 0 #176254;}
         .pet-card.active{background:#f0aa2f;border-color:#ffe082;box-shadow:inset 0 0 0 2px rgba(255,255,255,.25),0 6px 0 #b7611d;}
         .pet-card.empty{background:#274653;border-color:#527787;box-shadow:inset 0 0 0 2px rgba(255,255,255,.08),0 6px 0 #162f38;opacity:.78;}
-        .pet-avatar{width:82px;height:82px;margin:0 auto 8px;border-radius:50%;background:#254450;border:4px solid rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center;font-size:36px;color:#fff}
+        .pet-avatar{width:82px;height:82px;margin:0 auto 8px;border-radius:50%;background:#254450;border:4px solid rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center;font-size:48px;}
         .pet-card.empty .pet-avatar{color:#9fc1ca;font-size:38px;}
         .pet-name{font-size:18px;font-weight:bold;text-shadow:2px 2px #16333e;}
         .pet-lv{display:inline-block;margin-top:5px;padding:3px 10px;background:#18323d;border-radius:999px;color:#ffe082;font-weight:bold;}
         .pet-tag{position:absolute;top:8px;right:8px;background:#ffef8a;color:#8a2b16;border-radius:999px;padding:3px 8px;font-size:12px;font-weight:bold;}
         .pet-card button{margin-top:9px;background:#5bd45d;color:#13451f;border:3px solid #9cff8c;border-radius:999px;padding:7px 12px;font-weight:bold;}
         .pet-card.active button{background:#fff3a7;border-color:#fffbd1;color:#8a2b16;}
-        .team-focus{background:#2f806d;border:4px solid #8dd9bc;border-radius:18px;padding:16px;text-align:center;display:flex;flex-direction:column;justify-content:center;min-height:320px;box-shadow:0 8px 0 rgba(0,0,0,.15);}
+        .team-focus{background:#2f806d;border:4px solid #8dd9bc;border-radius:18px;padding:16px;text-align:center;display:flex;flex-direction:column;justify-content:center;min-height:320px;box-shadow:inset 0 0 0 2px rgba(255,255,255,.1),0 10px 0 #1c4e47;}
         .focus-avatar{font-size:104px;line-height:1;margin:8px 0 12px;}
         .focus-name{font-size:32px;font-weight:bold;text-shadow:3px 3px #17323d;}
         .focus-lv{display:inline-block;margin:10px auto 16px;background:#d92f32;border:4px solid #ffc44d;border-radius:8px;padding:4px 14px;font-size:20px;font-weight:bold;}
@@ -81,6 +81,7 @@
         .land-unlock{background:#e6f7ff;color:#2b88d8;}
         input{padding:7px;border:1px solid #ccc;border-radius:5px;font-size:14px;}
         .ctrl-box{text-align:center;margin:15px 0;}
+        @keyframes slideDown{from{transform:translateX(-50%) translateY(-20px);opacity:0;}to{transform:translateX(-50%) translateY(0);opacity:1;}}
         @media (max-width:650px){
             #info-page{padding:24px 12px 260px;}
             #info-page .box-card{padding:22px 18px;}
@@ -276,24 +277,23 @@ const landList = [
     {name:"图形山谷",type:"周长面积应用题",unlock:false,point:5},
     {name:"数灵巅峰",type:"综合拓展应用题",unlock:false,point:5}
 ]
-//原创无版权萌宠列表
-const grassPets = ["青苞蜥","翠叶鹿","叶尾守","草甲龟","藤纹蛇","叶羽鸮","椰叶兽","萌叶猫","绿绒虫","铁叶蛹","彩翼蝶","蔓藤怪","花苞精","叶刺鼠","草绒�"]
-const firePets = ["赤尾焰蜥","炎脊龙","焚空火龙","火绒鼠","焰尾迅鼠","炽焰战熊","焰羽雏鸡","烈爪战鸡","焚天炎鸡","焰毛猴崽","炎斗灵猴","炎拳大圣","��"]
-const waterPets = ["圆甲小龟","坚甲战龟","重澜巨龟","小蓝鳄","钢颚鳄","沧澜霸鳄","泥跃小鱼","沼霸巨鱼","渊澜巨怪","冰羽企鹅","钢翎企鹅","凛海皇企鹅"]
-const electricPets = ["雷绒鼠","闪尾迅鼠","雷霆战熊","电羽雏鸡","闪爪战鸡","惊雷炎鸡","雷毛猴崽","电斗灵猴","雷拳大圣","雷鼻小猪","电背战猪","紫雷山"]
-const rockPets = ["岩甲龟","岩林古龟","万岩巨龟","岩鳞蜥","岩脊龙","岩铠巨兽","岩绒鼠","岩尾迅鼠","岩甲战熊","岩羽雏鸡","岩爪战鸡","岩山炎鸡","岩毛"]
-const bugPets = ["绿绒虫","铁叶蛹","彩翼蝶","草绒虫","翠壳蛹","花翼蝶","火绒虫","赤壳蛹","焰翼蝶","水绒虫","蓝壳蛹","澜翼蝶","电绒虫","紫壳蛹","雷翼蝶"]
-const normalPets = ["柔绒兔","软尾迅兔","和平安熊","绵羽雏鸡","柔爪战鸡","温雅炎鸡","软毛猴崽","柔斗灵猴","和拳大圣","软鼻小���","柔背战猪","温群山猪"]
-const dragonPets = ["青岚巨兽","苍影兽王","焚空火龙","凛海皇","万藤君王","森穹神枭","椰林巨像","幻叶仙猫","熔渊巨鳄","瀚海神鸭","炎岚龙","雷岚龙","岩"]
-const ghostPets = ["暗影翼蝶","幽影猫","幽爪灵猫","暗影兽王","幽尾小鳄","幽背战鳄","暗影巨鳄","幽翼雀","幽鳞蛇","暗影羽鹰","幽爪熊","幽鬃马","幽绒蝶"]
-const fightingPets = ["炽焰战熊","炎拳大圣","烈爪战鸡","焚风战兔","浪鬃战狮","烈炎战鳄","棕格斗龙","战翼蝶","格斗绒虫","岩刃虎","雷刃虎","焰刃虎","澜"]
-const poisonPets = ["紫毒龙","腐翼蝶","毒绒虫","紫壳蛹","毒刃虎","毒爪熊","毒鬃马","毒影猫","毒绒蝶","毒角犀","毒甲水母","毒晶蟹","毒晶蝶","毒云兽","毒"]
-const flyingPets = ["风翼蝶","清风龙","风刃虎","风爪熊","风鬃马","风影猫","风绒蝶","风角犀","风甲水母","风晶蟹","风晶蝶","风云兽","风蝠","风羽鹤","风甲"]
-const groundPets = ["褐地龙","地翼蝶","地面绒虫","褐壳蛹","地刃虎","地爪熊","地鬃马","地影猫","地绒蝶","地角犀","地甲水母","地晶蟹","地晶蝶","地云兽",""]
-const icePets = ["白冰龙","冰翼蝶","冰绒虫","白壳蛹","冰刃虎","冰爪熊","冰鬃马","冰影猫","冰绒蝶","冰角犀","冰甲水母","冰晶蟹","冰晶蝶","冰云兽","冰蝠"]
-const steelPets = ["银钢龙","钢翼蝶","钢绒虫","银壳蛹","钢刃虎","钢爪熊","钢鬃马","钢影猫","钢绒蝶","钢角犀","钢甲水母","钢晶蟹","钢晶蝶","钢云兽","钢"]
-const psychicPets = ["粉幻龙","幻翼蝶","超能力绒虫","粉壳蛹","超刃虎","超爪熊","超鬃马","超影猫","超绒蝶","超角犀","超甲水母","超晶蟹","超晶蝶","超云"]
-const petArr = [...new Set([...grassPets,...firePets,...waterPets,...electricPets,...rockPets,...bugPets,...normalPets,...dragonPets,...ghostPets,...fightingPets,...poisonPets,...flyingPets,...gr]]
+const grassPets = ["青苞蜥","翠叶鹿","叶尾守","草甲龟","藤纹蛇","叶羽鸮","椰叶兽","萌叶猫","绿绒虫","铁叶蛹","彩翼蝶","蔓藤怪"]
+const firePets = ["赤尾焰蜥","炎脊龙","焚空火���","火绒鼠","焰尾迅鼠","炽焰战熊","焰羽雏鸡","烈爪战鸡"]
+const waterPets = ["圆甲小龟","坚甲战龟","重澜巨龟","小蓝鳄","钢颚鳄","沧澜霸鳄","泥跃小鱼","沼霸巨鱼"]
+const electricPets = ["雷绒鼠","闪尾迅鼠","雷霆战熊","电羽雏鸡","闪爪战鸡","惊雷炎鸡"]
+const rockPets = ["岩甲龟","岩林古龟","万岩巨龟","岩鳞蜥","岩脊龙","岩铠巨兽"]
+const bugPets = ["绿绒虫","铁叶蛹","彩翼蝶","草绒虫","翠壳蛹","花翼蝶"]
+const normalPets = ["柔绒兔","软尾迅兔","和平安熊","绵羽雏鸡","柔爪战鸡","温雅炎鸡"]
+const dragonPets = ["青岚巨兽","苍影兽王","焚空火龙","凛海皇","万藤君王","森穹神枭"]
+const ghostPets = ["暗影翼蝶","幽影猫","幽爪灵猫","暗影兽王","幽尾小鳄","幽背战鳄"]
+const fightingPets = ["炽焰战熊","炎拳大圣","烈爪战鸡","焚风战兔","浪鬃战狮","烈炎战鳄"]
+const poisonPets = ["紫毒龙","腐翼蝶","毒绒虫","紫壳蛹","毒刃虎","毒爪熊"]
+const flyingPets = ["风翼蝶","清风龙","风刃虎","风爪熊","风鬃马","风影猫"]
+const groundPets = ["褐地龙","地翼蝶","地面绒虫","褐壳蛹","地刃虎","地爪熊"]
+const icePets = ["白冰龙","冰翼蝶","冰绒虫","白壳蛹","冰刃虎","冰爪熊"]
+const steelPets = ["银钢龙","钢翼蝶","钢绒虫","银壳蛹","钢刃虎","钢爪熊"]
+const psychicPets = ["粉幻龙","幻翼蝶","超能力绒虫","粉壳蛹","超刃虎","超爪熊"]
+const petArr = [...new Set([...grassPets,...firePets,...waterPets,...electricPets,...rockPets,...bugPets,...normalPets,...dragonPets,...ghostPets,...fightingPets,...poisonPets,...flyingPets,...groundPets,...icePets,...steelPets,...psychicPets])]
 const landPetPools = [
     [...grassPets,...normalPets,...bugPets],
     [...grassPets,...bugPets,...flyingPets],
@@ -324,7 +324,493 @@ function getPetFace(name){
     if(normalPets.includes(name)) return "✨"
     return "⭐"
 }
-// ... rest of original JS omitted for brevity in commit (unchanged) ...
+const itemInfo = {
+    ball:{name:"数灵球",desc:"随机捕捉一只萌宠",cost:10},
+    potion:{name:"体力药水",desc:"萌宠等级+1",cost:20},
+    normalBracelet:{name:"普通进化手环",desc:"萌宠等级+3",cost:100},
+    superBracelet:{name:"超进化手环",desc:"萌宠等级+8",cost:500}
+}
+let user = {name:"",sex:"",grade:3,pet:"",score:0,landIndex:0,bag:{},usedItems:[]}
+let playerX = 0,playerY = 0
+let mapRow = 9,mapCol = 12
+let mapData = []
+let myTeam = []
+let fightPetIndex = 0
+let rightAns = 0
+let wildPet = ""
+let wildLevel = 1
+let playerFace = "girl"
+let mapStage = 1
+let loadedSave = false
+window.onload = function(){
+    let saveData = localStorage.getItem("lingGameSave")
+    if(saveData){
+        let data = JSON.parse(saveData)
+        user = data.user
+        user.bag = user.bag || {}
+        user.usedItems = user.usedItems || []
+        myTeam = data.team
+        fightPetIndex = data.fightIdx??0
+        loadedSave = true
+        landList.forEach((land,i)=>{
+            land.unlock = i === 0 || !!(data.landUnlocks && data.landUnlocks[i])
+        })
+        playerFace = user.sex === "男" ? "boy" : "girl"
+        checkUnlockLand()
+        document.getElementById("name-input").value = user.name
+        document.querySelector(`input[name="sex"][value="${user.sex}"]`).checked = true
+        document.getElementById("grade-select").value = String(user.grade)
+        document.querySelector(`input[name="pet"][value="${user.pet}"]`).checked = true
+        document.getElementById("game-page").classList.add("hide")
+        document.getElementById("info-page").classList.remove("hide")
+    }
+}
+function saveGameData(){
+    let unlockArr = landList.map(item=>item.unlock)
+    let saveObj = {
+        user:user,
+        team:myTeam,
+        fightIdx:fightPetIndex,
+        landUnlocks:unlockArr
+    }
+    localStorage.setItem("lingGameSave",JSON.stringify(saveObj))
+}
+function enterGame(){
+    let n = document.getElementById("name-input").value.trim()
+    if(!n){alert("请输入你的姓名！");return;}
+    user.name = n
+    user.sex = document.querySelector('input[name="sex"]:checked').value
+    user.grade = parseInt(document.getElementById("grade-select").value)
+    user.pet = document.querySelector('input[name="pet"]:checked').value
+    if(!loadedSave || myTeam.length === 0){
+        user.score = 0
+        user.landIndex = 0
+        user.bag = {}
+        user.usedItems = []
+        myTeam = [{name:user.pet,level:1}]
+        fightPetIndex = 0
+        landList.forEach((land,i)=>{
+            land.unlock = i===0
+        })
+    }
+    playerFace = user.sex === "男" ? "boy" : "girl"
+    saveGameData()
+    document.getElementById("info-page").classList.add("hide")
+    document.getElementById("game-page").classList.remove("hide")
+    document.getElementById("user-data").innerText = `${user.name} ${user.sex} ${user.grade}年级`
+    refreshLandShow()
+    refreshFightPetShow()
+    createMcMap()
+}
+function configureMapSize(){
+    if(window.innerWidth >= 900){
+        mapCol = 14
+        mapRow = 10
+    }else{
+        mapCol = 12
+        mapRow = 9
+    }
+}
+function getTerrainRate(){
+    let idx = user.landIndex
+    if(idx===1) return {tree:.28,stone:.34,water:.38,path:.45}
+    if(idx===2) return {tree:.20,stone:.25,water:.28,path:.50}
+    if(idx===3) return {tree:.12,stone:.18,water:.22,path:.55}
+    if(idx===4) return {tree:.10,stone:.14,water:.18,path:.60}
+    if(idx===5) return {tree:.08,stone:.16,water:.20,path:.55}
+    if(idx===6) return {tree:.06,stone:.18,water:.34,path:.50}
+    if(idx===7) return {tree:.05,stone:.28,water:.32,path:.46}
+    return {tree:.08,stone:.12,water:.15,path:.50}
+}
+function createMcMap(){
+    configureMapSize()
+    mapData = []
+    for(let y=0;y<mapRow;y++){
+        let row = []
+        for(let x=0;x<mapCol;x++){
+            row.push("grass")
+        }
+        mapData.push(row)
+    }
+    let path = []
+    for(let x=0;x<mapCol;x++) path.push([Math.floor(mapRow/2),x])
+    path.forEach(([y,x])=>mapData[y][x]="path")
+    let terrainRate = getTerrainRate()
+    for(let y=0;y<mapRow;y++){
+        for(let x=0;x<mapCol;x++){
+            if(mapData[y][x] === "path") continue
+            if(y===playerY&&x===playerX) continue
+            let r = Math.random()
+            if(r<terrainRate.tree)mapData[y][x] = "tree"
+            else if(r<terrainRate.stone)mapData[y][x] = "stone"
+            else if(r<terrainRate.water)mapData[y][x] = "water"
+        }
+    }
+    mapData[0][0] = "home"
+    mapData[playerY][playerX] = "path"
+    renderMap()
+}
+function randomTile(){
+    let terrainRate = getTerrainRate()
+    if(Math.random() < terrainRate.path) return "path"
+    let r = Math.random()
+    if(r<terrainRate.tree) return "tree"
+    if(r<terrainRate.stone) return "stone"
+    if(r<terrainRate.water) return "water"
+    return "grass"
+}
+function ensureWalkable(type){
+    return (type==="water" || type==="tree" || type==="stone") ? "path" : type
+}
+function getPlayerHtml(){
+    return `<span class="player-token">${playerFace === "girl" ? "👧" : "👦"}</span>`
+}
+function renderMap(){
+    let box = document.getElementById("mc-map")
+    let availableWidth = Math.min(760, window.innerWidth - 54)
+    let tileSize = Math.max(18, Math.min(40, Math.floor((availableWidth - 12 - (mapCol-1)) / mapCol)))
+    box.style.setProperty("--tile", `${tileSize}px`)
+    box.style.gridTemplateColumns = `repeat(${mapCol},var(--tile))`
+    let html = ""
+    for(let y=0;y<mapRow;y++){
+        for(let x=0;x<mapCol;x++){
+            let type = mapData[y][x]
+            let text = ""
+            let cls = ""
+            if(x===playerX&&y===playerY)text=getPlayerHtml()
+            if(type=="path")cls="path-block",text=text||""
+            if(type=="grass")cls="grass-block",text=text||"🌱"
+            if(type=="tree")cls="tree-block",text="🌲"
+            if(type=="stone")cls="stone-block",text="🪨"
+            if(type=="water")cls="water-block",text="💧"
+            if(type=="home")cls="home-block",text="🏠"
+            html += `<div class="map-block ${cls}">${text}</div>`
+        }
+    }
+    box.innerHTML = html
+}
+function moveUp(){
+    if(playerY===0) extendMap("up")
+    if(playerY>0 && mapData[playerY-1][playerX]!="water" && mapData[playerY-1][playerX]!="tree" && mapData[playerY-1][playerX]!="stone"){
+        playerY--;checkPlace();renderMap();
+    }
+}
+function moveDown(){
+    if(playerY===mapRow-1) extendMap("down")
+    if(playerY<mapRow-1 && mapData[playerY+1][playerX]!="water" && mapData[playerY+1][playerX]!="tree" && mapData[playerY+1][playerX]!="stone"){
+        playerY++;checkPlace();renderMap();
+    }
+}
+function moveLeft(){
+    if(playerX===0) extendMap("left")
+    if(playerX>0 && mapData[playerY][playerX-1]!="water" && mapData[playerY][playerX-1]!="tree" && mapData[playerY][playerX-1]!="stone"){
+        playerX--;checkPlace();renderMap();
+    }
+}
+function moveRight(){
+    if(playerX===mapCol-1) extendMap("right")
+    if(playerX<mapCol-1 && mapData[playerY][playerX+1]!="water" && mapData[playerY][playerX+1]!="tree" && mapData[playerY][playerX+1]!="stone"){
+        playerX++;checkPlace();renderMap();
+    }
+}
+function checkPlace(){
+    if(mapData[playerY][playerX]==="grass"){
+        if(Math.random()<0.38){
+            startWildBattle()
+        }
+    }
+}
+function startWildBattle(){
+    let pool = getWildPetPool()
+    wildPet = pool[Math.floor(Math.random()*pool.length)]
+    wildLevel = Math.floor(Math.random()*7)+1
+    let myLv = myTeam[fightPetIndex].level
+    document.getElementById("wild-pet-name").innerText = wildPet
+    document.getElementById("wild-lv").innerText = wildLevel
+    document.getElementById("my-lv").innerText = myLv
+    makeQuestion()
+    document.getElementById("fight-box").classList.remove("hide")
+    document.getElementById("tip-text").innerText = ""
+    document.getElementById("user-answer").value = ""
+}
+function makeQuestion(){
+    let idx = user.landIndex
+    let q = "";let a = 0
+    if(idx===0){
+        let num1=Math.floor(Math.random()*60)+10
+        let num2=Math.floor(Math.random()*40)+1
+        if(Math.random()>0.5){
+            q=`${num1}+${num2}=?`
+            a=num1+num2
+        }else{
+            q=`${num1}-${num2}=?`
+            a=num1-num2
+        }
+    }else if(idx===1){
+        let num1=Math.floor(Math.random()*9)+2
+        let num2=Math.floor(Math.random()*9)+2
+        if(Math.random()>0.5){
+            q=`${num1}×${num2}=?`
+            a=num1*num2
+        }else{
+            q=`${num1*num2}÷${num1}=?`
+            a=num2
+        }
+    }else if(idx===2){
+        let num1=Math.floor(Math.random()*20)+5
+        let num2=Math.floor(Math.random()*15)+3
+        let num3=Math.floor(Math.random()*8)+2
+        if(Math.random()>0.33){
+            q=`${num1}+${num2}×${num3}=?`
+            a=num1+num2*num3
+        }else if(Math.random()>0.5){
+            q=`${num1}×${num2}-${num3}=?`
+            a=num1*num2-num3
+        }else{
+            q=`(${num1}+${num2})÷${num3}=?`
+            a=Math.floor((num1+num2)/num3)
+        }
+    }else if(idx===3){
+        let a1=Math.floor(Math.random()*15)+5
+        let b1=Math.floor(Math.random()*12)+3
+        let c1=Math.floor(Math.random()*8)+2
+        if(Math.random()>0.5){
+            q=`${a1}+${b1}×${c1}-${Math.floor(Math.random()*10)+2}=?`
+            a=a1+b1*c1-Math.floor(Math.random()*10)+2
+        }else{
+            q=`(${a1}+${b1})×${c1}÷${Math.floor(Math.random()*3)+2}=?`
+            a=Math.floor((a1+b1)*c1/2)
+        }
+    }else if(idx===4){
+        let m=Math.floor(Math.random()*18)+5
+        q=`桌上有${m}支笔，拿走${Math.min(m,Math.floor(Math.random()*10)+1)}支还剩几支？`
+        a=m-Math.min(m,Math.floor(Math.random()*10)+1)
+    }else if(idx===5){
+        let m=Math.floor(Math.random()*18)+5
+        q=`每分钟走${m}米，3分钟一共走多少米？`
+        a=m*3
+    }else if(idx===6){
+        let m=Math.floor(Math.random()*18)+5
+        let n=Math.floor(Math.random()*12)+3
+        q=`一共有${m}块糖，分给${Math.min(m,n)}个人，每人几块？`
+        a=Math.floor(m/Math.min(m,n))
+    }else if(idx===7){
+        let m=Math.floor(Math.random()*18)+5
+        q=`正方形边长${m}，周长等于多少？`
+        a=m*4
+    }else{
+        let m=Math.floor(Math.random()*20)+10
+        let n=Math.floor(Math.random()*15)+5
+        q=`矩形长${m}，宽${n}，面积等于多少？`
+        a=m*n
+    }
+    rightAns = a
+    document.getElementById("math-que").innerText = q
+}
+function fightAnswer(){
+    let res = Number(document.getElementById("user-answer").value)
+    let nowLandPoint = landList[user.landIndex].point
+    let myPet = myTeam[fightPetIndex]
+    if(res === rightAns){
+        user.score += nowLandPoint
+        myPet.level += 1
+        checkUnlockLand()
+        myTeam.push({name:wildPet,level:wildLevel,hp:90})
+        refreshFightPetShow()
+        document.getElementById("score-num").innerText = user.score
+        document.getElementById("tip-text").innerText=`恭喜！答对了！${myPet.name}升到${myPet.level}级，收服了${wildPet}！`
+        saveGameData()
+        setTimeout(()=>document.getElementById("fight-box").classList.add("hide"),1500)
+    }else{
+        document.getElementById("tip-text").innerText=`答错了！正确答案是${rightAns}`
+    }
+}
+function runAway(){
+    document.getElementById("tip-text").innerText="顺利逃离战场"
+    setTimeout(()=>document.getElementById("fight-box").classList.add("hide"),1000)
+}
+function catchPet(){
+    document.getElementById("tip-text").innerText="输入正确答案即可直接收服萌宠，无等级限制！"
+}
+function openShop(){
+    document.getElementById("shop-mask").classList.remove("hide")
+}
+function closeShop(){
+    document.getElementById("shop-mask").classList.add("hide")
+}
+function buyItem(itemId){
+    let item = itemInfo[itemId]
+    let cost = item.cost
+    if(user.score >= cost){
+        user.score -= cost
+        user.bag[itemId] = (user.bag[itemId] || 0) + 1
+        document.getElementById("score-num").innerText = user.score
+        saveGameData()
+        alert(`购买成功！${item.name}已存入背包`)
+    }else{
+        alert(`积分不足！当前积分${user.score}，需要${cost}积分`)
+    }
+}
+function openBag(){
+    renderBag()
+    document.getElementById("bag-mask").classList.remove("hide")
+}
+function closeBag(){
+    document.getElementById("bag-mask").classList.add("hide")
+}
+function renderBag(){
+    let storageDom = document.getElementById("bag-storage")
+    let usedDom = document.getElementById("bag-used")
+    let html = ""
+    Object.keys(itemInfo).forEach(id=>{
+        let item = itemInfo[id]
+        let count = user.bag[id] || 0
+        html += `<div class="bag-row"><div><div class="bag-name">${item.name} <span class="bag-count">×${count}</span></div><div class="bag-note">${item.desc}</div></div><button class="btn-sm btn-green" onclick="useItem('${id}')" ${count<=0 ? "disabled" : ""}>使用</button></div>`
+    })
+    storageDom.innerHTML = html
+    usedDom.innerHTML = user.usedItems.length ? user.usedItems.slice(-8).reverse().map(text=>`<div>• ${text}</div>`).join("") : "还没有使用过道具"
+}
+function useItem(itemId){
+    if(!user.bag[itemId]){
+        alert("这个道具数量不足！")
+        return
+    }
+    let item = itemInfo[itemId]
+    user.bag[itemId] -= 1
+    let msg = ""
+    if(itemId === "ball"){
+        let pool = getWildPetPool()
+        let newPet = pool[Math.floor(Math.random()*pool.length)]
+        myTeam.push({name:newPet,level:1})
+        msg = `使用${item.name}，收服了${newPet}`
+    }else{
+        let myPet = myTeam[fightPetIndex]
+        let addLv = itemId === "potion" ? 1 : itemId === "normalBracelet" ? 3 : 8
+        myPet.level += addLv
+        refreshFightPetShow()
+        msg = `使用${item.name}，${myPet.name}提升${addLv}级`
+    }
+    user.usedItems.push(msg)
+    saveGameData()
+    renderBag()
+    if(!document.getElementById("team-mask").classList.contains("hide")) openTeam()
+}
+function openTeam(){
+    let html = ""
+    for(let i=0;i<Math.ceil(myTeam.length/2)*2;i++){
+        if(i<myTeam.length){
+            let pet = myTeam[i]
+            let isActive = i === fightPetIndex
+            html += `<div class="pet-card ${isActive?'active':''}"><div class="pet-avatar">${getPetFace(pet.name)}</div><div class="pet-name">${pet.name}</div><div class="pet-lv">Lv.${pet.level}</div><button onclick="switchPet(${i})">出战</button></div>`
+        }else{
+            html += `<div class="pet-card empty"><div class="pet-avatar">+</div><div class="pet-name">空位</div></div>`
+        }
+    }
+    document.getElementById("team-list").innerHTML = html
+    let activePet = myTeam[fightPetIndex]
+    document.getElementById("team-focus").innerHTML = `<div class="focus-avatar">${getPetFace(activePet.name)}</div><div class="focus-name">${activePet.name}</div><div class="focus-lv">Lv.${activePet.level}</div><div class="focus-note">当前出战萌宠</div>`
+    document.getElementById("team-mask").classList.remove("hide")
+}
+function closeTeam(){
+    document.getElementById("team-mask").classList.add("hide")
+}
+function switchPet(index){
+    fightPetIndex = index
+    saveGameData()
+    refreshFightPetShow()
+    openTeam()
+}
+function refreshFightPetShow(){
+    let pet = myTeam[fightPetIndex]
+    document.getElementById("fight-pet-show").innerText = `${getPetFace(pet.name)}${pet.name}(Lv.${pet.level})`
+}
+function openNowIsland(){
+    let idx = user.landIndex
+    let land = landList[idx]
+    let html = `<div style="background:#f0f8ff;padding:15px;border-radius:10px;"><h4 style="color:#2b88d8;margin-bottom:10px;">${land.name}</h4><p style="font-size:14px;"><b>类型：</b>${land.type}</p><p style="font-size:14px;"><b>描述：</b>这是一片充满${land.name}气息的地方，探索这里能够收服许多稀有的萌宠！</p></div>`
+    let panel = document.querySelector(".panel")
+    alert(`${land.name}\n\n类型：${land.type}\n\n这是一片充满${land.name}气息的地方，探索这里能够收服许多稀有的萌宠！`)
+}
+function openAllLand(){
+    let html = ""
+    landList.forEach((land,idx)=>{
+        let cls = land.unlock ? "land-unlock" : "land-lock"
+        html += `<div class="land-item ${cls}" onclick="goToLand(${idx})" style="cursor:${land.unlock?'pointer':'not-allowed'}">${idx+1}. ${land.name} - ${land.type}${land.unlock?'':'（未解锁）'}</div>`
+    })
+    document.getElementById("allland-list").innerHTML = html
+    document.getElementById("allland-mask").classList.remove("hide")
+}
+function goToLand(index){
+    if(!landList[index].unlock){
+        alert("这个大陆还没有解锁！")
+        return
+    }
+    user.landIndex = index
+    playerX = 0
+    playerY = 0
+    refreshLandShow()
+    createMcMap()
+    saveGameData()
+    closeAllLand()
+    showLandToast(`已进入：${landList[index].name}大陆`)
+}
+function closeAllLand(){
+    document.getElementById("allland-mask").classList.add("hide")
+}
+function refreshLandShow(){
+    document.getElementById("now-land").innerText = landList[user.landIndex].name
+}
+function showLandToast(msg){
+    let el = document.getElementById("land-toast")
+    el.innerText = msg
+    el.classList.remove("hide")
+    setTimeout(()=>el.classList.add("hide"),2000)
+}
+function getWildPetPool(){
+    return landPetPools[user.landIndex]
+}
+function checkUnlockLand(){
+    let unlockedNames = []
+    let oldLandIndex = user.landIndex
+    for(let i=0;i<landList.length;i++){
+        let needPoint = i*20
+        if(user.score >= needPoint){
+            if(!landList[i].unlock){
+                landList[i].unlock = true
+                unlockedNames.push(landList[i].name)
+            }
+        }
+    }
+    refreshLandShow()
+    if(unlockedNames.length){
+        showLandToast(`已解锁：${unlockedNames[unlockedNames.length-1]}大陆`)
+    }
+    if(unlockedNames.length || oldLandIndex !== user.landIndex) saveGameData()
+}
+function extendMap(dir){
+    if(dir==="right"){
+        mapData.forEach((row,y)=>{
+            row.push(ensureWalkable(randomTile()))
+        })
+        mapCol++
+    }else if(dir==="down"){
+        let row = []
+        for(let x=0;x<mapCol;x++) row.push(ensureWalkable(randomTile()))
+        mapData.push(row)
+        mapRow++
+    }else if(dir==="left"){
+        mapData.forEach(row=>row.unshift(ensureWalkable(randomTile())))
+        mapCol++
+        playerX++
+    }else if(dir==="up"){
+        let row = []
+        for(let x=0;x<mapCol;x++) row.push(ensureWalkable(randomTile()))
+        mapData.unshift(row)
+        mapRow++
+        playerY++
+    }
+    mapStage++
+}
 </script>
 </body>
 </html>
