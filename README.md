@@ -9,3 +9,5 @@
 ## 部署
 
 上传到 GitHub 后，可在仓库 Settings -> Pages 中选择 `main` 分支和根目录进行部署。
+
+Redeploy triggered via Copilot on 2026-06-21T06:00:00Z
